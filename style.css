@@ -1,0 +1,543 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px dashed grey; */
+}
+body, p, ul, a{
+    font-size: 14px;
+    color:#2d2d2d;
+    font-family:'Raleway';
+    padding:0;
+}
+h1, h2, h3 {
+    font-family:'Playfair Display';
+}
+
+a{
+    color:#e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #b64036;
+}
+
+img{
+    max-width: 100%;
+    max-height:100%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    padding:0;
+}
+
+
+/* header *************************/
+header{
+    width:100%;
+    background-color:white;
+    position: fixed;
+    z-index: 1;
+}
+.header{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.8rem 2% 0rem;
+}
+
+.logo{
+    width: 50%;
+    padding:0 0 0.5rem 0;
+    /* padding:.5rem 0; */
+}
+.logo img{
+    height:2.9rem;
+}
+.cart{
+    width: 50%;
+    justify-content:flex-end;
+    padding:0 0 0.5rem 0;
+}
+.cart img{
+    height:3.1rem;
+}
+.nav{
+    width:100%;
+    border-top: 0.5px solid #d7d7d7;
+    padding:.8rem 0;
+}
+.nav ul{
+    width:320px;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/* add a space to make the content below shown */
+.divider{
+    height:112px;
+    background-color: black;
+}
+
+/* banner section **********************/
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
+    background-size: cover, 155px, cover;
+    background-position: center, center 60px, center top;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    height: 400px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    justify-content: center;
+    /* padding: 30%; */
+}
+.banner p{
+    color:white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+
+}
+.banner h2{
+    text-transform:capitalize;
+    font-weight: 300;
+    margin:0 auto;
+    font-size: 2.3rem;
+}
+
+/* about section ***************************/
+.about{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding:1rem 0rem;
+}
+.about h2{
+    text-transform:capitalize;
+    font-size: 2.3rem;
+}
+.about em{
+    font-weight: 300;
+}
+.about p{
+    font-size: 1.05rem;
+    font-weight: 45;
+    line-height: 2rem;
+}
+
+
+/* shop section ******************************/
+.shop a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-shadow: 0px 1px black;
+}
+.shop a:hover{
+    color:#ffe7e7;
+}
+.shop{
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: -4px 0; */
+}
+.large-box{
+    flex: 1 0 100%;
+    height: 50vw;
+}
+.small-box{
+    flex: 1 0 50%;
+    height: 50vw;
+}
+.mens-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/mens-category.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    /* border */
+    border: solid white;
+    border-width: 4px 0px;
+    /* center text */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.trends-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/trends-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border */
+    border: 4px solid white;
+    border-left: none;
+    /* center text */
+    width:50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.glasses-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/glasses-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 50%;
+    height: 50vw;
+    /* border */
+    border: 4px solid white;
+    border-right: none;
+    /* center text */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/sale-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 50%;
+    height: 50vw;
+    /* border */
+    border: 4px solid white;
+    border-left: none;
+    /* center text */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bags-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/bags-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 50%;
+    height: 50vw;
+    /* border */
+    border: 4px solid white;
+    border-right: none;
+    /* center text */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.womens-shop{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/womens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 100%;
+    height: 50vw;
+    border: 4px solid white;
+    border-width: 4px 0;
+    /* center text */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* updates ****************************************/
+/* make background image cover the whole screen
+ to increase visal experience */
+.updates{
+    flex-direction: column;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(images/wave-bkgd.jpg);
+    background-size: cover, contian;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 330px;
+    margin: 4px 0;
+    /* text style */
+    text-align: center;
+    color:white;
+}
+.updates-text{
+    padding:0rem 1rem;
+    max-width:700px;
+}
+.updates h2{
+    font-size: 2.3rem;
+    margin:0 auto;
+}
+.updates em{
+    font-weight: 320;
+}
+.updates p{
+    color:white;
+    font-size: 1.03rem;
+    font-weight: 40;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+/* form style */
+input[type=email]{
+    max-width:500px;
+    width:90%;
+    border-radius: 30px;
+    border:solid white;
+    height: 2.7rem;
+    padding:0 1rem;
+}
+input[type=submit]{
+    background-color:#e2574c;
+    color:white;
+    width: 6.5rem;
+    height: 2.3rem;
+    margin-left: -7rem;
+    border-radius: 20px;
+    border:solid white;  
+}
+input[type=submit]:hover{
+    background-color: #b64036;
+}
+
+/* footer ************************************/
+footer{
+    background-color: #242424;
+}
+.footer{
+    max-width:1240px;
+    height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 1rem 0;
+    text-align: center;
+}
+.footer p, li{
+    color:white;
+    margin: 0 auto;
+    padding:0.2rem;
+    font-family:'Playfair Display';
+    font-size: 0.9rem;
+    font-weight: 40;
+}
+.contact a{
+    color:white;
+    margin: 0 auto;
+    padding:0;
+    font-family:'Playfair Display';
+    font-size: 0.85rem;
+    font-weight: 40;
+    text-transform: lowercase;
+    text-decoration:underline;
+}
+.contact a:hover{
+    color:#b64036;
+}
+.contact{
+    margin:1rem auto;
+}
+
+.social-media-link span{
+    display:none;
+}
+.social-media-link li{
+    display: inline-block;
+    margin: 1rem 0.5rem;
+}
+.social-media-link a{
+    color: white;
+    text-transform: capitalize;
+}
+.social-media-link a:hover{
+    color:#b64036;
+}
+
+
+/* tablet screen size: >600px */
+@media screen and (min-width: 600px){
+    body, p, ul{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 3rem;  
+    }
+
+    /* header******************************* */
+    .header{
+        padding: 1rem 2%;
+    }
+    .logo{
+        order: 1;
+        width: 20%;
+        padding:0;
+    }
+    .nav{
+        order:2;
+        width: 60%;
+        border:none;
+        padding:0;
+    }
+    .cart{
+        order:3;
+        width:20%;
+        padding:0;
+    }
+    .divider{
+        height: 80px;
+    }
+
+    /* banner **********************************/
+    .banner p{
+        font-size: 1.3rem;
+    
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+
+    /* about section ******************************/
+    .about{
+        max-width: 600px;
+        /* set max width so that readers can easy to read */
+        padding: 1.5rem 0rem;
+    }
+    .about p{
+        font-size:1.07rem;
+    }
+    /* shop section******************************* */
+    .shop a{
+        font-size: 1.9rem;
+        font-weight: 500;
+        text-shadow: 0px 1.5px black;
+    }
+    .large-box{
+        flex: 2 0 50%;
+        height: 25vw;
+    }
+    .small-box{
+        flex: 1 0 25%;
+        height: 25vw;
+    }
+    .mens-shop{
+        border-right-width: 4px;
+    }
+    .trends-shop{
+        border: 4px solid white;
+    }
+    .bags-shop{
+        border: 4px solid white;
+    }
+    .womens-shop{
+        border-left-width: 4px;
+    }
+
+    /* updates */
+    .updates p{
+        font-size: 1.15rem;
+    }
+    input[type=email]{
+        height: 3rem;
+        padding:0 1.2rem;
+    }
+    input[type=submit]{
+        height: 2.7rem;
+        width: 7rem;
+        margin-left: -7.5rem;
+    }
+
+    /* footer */
+    .footer{
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: start;
+        margin-right: 3rem;
+        height: 280px;
+    }
+    .footer p, li, a {
+        font-size: 1rem;
+    }
+    .social-media-link{
+        display:flex;
+        align-content: center;
+    }
+    .social-media-link span{
+        display:inline;
+    }
+    .social-media-link li{
+        display: block;
+        list-style: none;
+        text-align: left;
+        position: center;
+        margin:0.4rem auto;
+    }
+    .social-media-link i{
+        min-width: 2rem;
+    }
+
+
+}
+@media screen and (min-width: 1240px){
+    .header{
+        max-width: 1240px;
+        padding: 1rem 2%;
+    }
+    .logo img{
+        height:3.9rem;
+    }
+    .cart img{
+        height:3.9rem;
+    }
+    .nav ul{
+        width:400px;
+    }
+    .nav a {
+        font-size: 1.1rem;
+    }
+    .divider{
+        height: 96px;
+        /* background-color: #e2574c; */
+    }
+
+    /* banner *******************************/
+    .banner{
+        height:550px;
+        background-size: cover, 250px, contain; 
+    }
+    .banner p{
+        font-size: 1.3rem;   
+    }
+    .banner h2{
+        font-size: 4rem;
+    }
+
+    /* about section */
+    .about{
+        max-width: 1240px;
+        padding: 2.8rem 17rem;
+    }
+    .about h2{
+        font-size: 2.5rem;
+    }
+    .about p{
+        font-size:1.2rem;
+    }
+
+    /* shop */
+    .shop a{
+        font-size: 2.3rem;
+        font-weight: 500;
+        text-shadow: 0px 2px black;
+    }
+
+    /* updates */
+    .updates{
+        height:300px;
+        background-size: cover, cover;
+    }
+    .updates h2{
+        font-size: 2.5rem;
+    }
+    .updates p{
+        padding-top: 1rem;
+    }
+
+    /* footer */
+    .footer p, li, a {
+        font-size: 1.05rem;
+    }
+    .footer{
+        margin-left: 3rem;
+        margin-right: 7rem;
+    }
+    
+}
