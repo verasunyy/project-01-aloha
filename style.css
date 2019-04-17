@@ -2,6 +2,9 @@
     box-sizing: border-box;
     /* border: 1px dashed grey; */
 }
+/* html {
+    scroll-behavior: smooth;
+} */
 body, p, ul, a{
     font-size: 14px;
     color:#2d2d2d;
@@ -232,14 +235,22 @@ header{
     align-items: center;
 }
 
+/* porduct list */
+.products{
+    /* color: black; */
+    /* background-color: black; */
+}
+.products h3{
+    /* color:#2d2d2d; */
+}
+
 /* updates ****************************************/
-/* make background image cover the whole screen
- to increase visal experience */
+
 .updates{
     flex-direction: column;
     justify-content: center;
     background-image:linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(images/wave-bkgd.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: bottom;
     height: 330px;
@@ -302,7 +313,7 @@ footer{
     padding: 8px 1rem 0;
     text-align: center;
 }
-.footer p, li{
+.footer p, .footer li{
     color:white;
     margin: 0 auto;
     padding:0.2rem;
@@ -443,7 +454,7 @@ footer{
         padding-right: 3rem;
         height: 280px;
     }
-    .footer p, li, a {
+    .footer p, .footer li, .footer a {
         font-size: 1rem;
     }
     .social-media-link{
@@ -484,7 +495,6 @@ footer{
     }
     .divider{
         height: 96px;
-        /* background-color: #e2574c; */
     }
 
     /* banner *******************************/
@@ -521,7 +531,7 @@ footer{
     /* updates */
     .updates{
         height:300px;
-        background-size: cover, cover;
+        background-size: cover;
     }
     .updates h2{
         font-size: 2.5rem;
@@ -531,7 +541,7 @@ footer{
     }
 
     /* footer */
-    .footer p, li, a {
+    .footer p, .footer li, .footer a {
         font-size: 1.05rem;
     }
     .footer{
