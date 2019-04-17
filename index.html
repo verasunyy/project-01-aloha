@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 
@@ -30,7 +30,11 @@
             </div>
             <!-- cart -->
             <div class="cart container">
+                <div class="cartNumber">
                 <img src="images/cart-icon.svg" alt="shopping cart">
+                <p class= "numberOfItems" id = "numberOfItems">0</p>
+                </div>
+
             </div>
             <!-- navigation -->
             <div class="nav">
@@ -66,7 +70,7 @@
                 products or sign-up for updates below.</p>
         </div>
     </section>
-    
+
     <!-- shop: 6 catagories layout with flexbox -->
     <section class="shop container" id="shop">
         <div class="mens-shop large-box">
@@ -90,59 +94,65 @@
     </section>
 
     <!-- products list -->
-    <section>
-        <div class="products container">
-            <h2><em>Most-Loved</em> products</h2>
-            <ul>
-                <li>
-                    <img src="images/checked-stretch-dress.jpg" alt="photo of checked stretch dress">
-                    <p>DRESSES</p>
-                    <h3>Checked Stretch Dress</h3>
-                    <p>$129.00</p>
-                </li>
-                <li>
-                    <img src="images/blue-hipster-backpack.jpg" alt="photo of blue hipster backpack">
-                    <p>BAGS</p>
-                    <h3>Blue Hipster Backpack</h3>
-                    <p>$69.00</p>
-                </li>
-                <li>
-                    <img src="images/demin-overall-shorts.jpg" alt="photo of Demin Overall Shorts">
-                    <p>DEMINS</p>
-                    <h3>Demin Overall Shorts</h3>
-                    <p>$89.00</p>
-                </li>
-                <li>
-                    <img src="images/pink-dotted-dress.jpg" alt="photo of Pink Dotted Dress">
-                    <p>DRESSES</p>
-                    <h3>Pink Dotted Dress</h3>
-                    <p>$99.00</p>
-                </li>
-                <li>
-                    <img src="images/blue-silk-dress.jpg" alt="photo of Blue Silk Dress">
-                    <p>DRESSES</p>
-                    <h3>Blue Silk Dress</h3>
-                    <p>$119.00</p>
-                </li>
-                <li>
-                    <img src="images/cotton-blue-shirt.jpg" alt="photo of Cotton Blue Shirt">
-                    <p>SHIRTS</p>
-                    <h3>Cotton Blue Shirt</h3>
-                    <p>$69.00</p>
-                </li>
-                <li>
-                    <img src="images/cotton-yellow-tshirt.jpg" alt="photo of Cotton Yellow TShirt">
-                    <p>TSHIRTS</p>
-                    <h3>Cotton Yellow TShirt</h3>
-                    <p>$89.00</p>
-                </li>
-                <li>
-                    <img src="images/stretch-knit-dress.jpg" alt="photo of Stretch Knit Dress">
-                    <p>DRESSES</p>
-                    <h3>Stretch Knit Dress</h3>
-                    <p>$119.00</p>
-                </li>
-            </ul>
+    <section class="products" id="products">
+        <h2><em>Most-Loved</em> Products</h2>
+        <div class="main-carousel" data-flickity='{ "autoPlay": true ,"contain": true, "groupCells": 1, "cellAlign": "left"}' >
+            <div class="carousel-cell" id="checked-stretch-dress">
+                <img src="images/checked-stretch-dress.jpg" alt="photo of checked stretch dress">
+                <p>DRESSES</p>
+                <h3>Checked Stretch Dress</h3>
+                <p>$129.00</p>
+                <button type="button" ><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/blue-hipster-backpack.jpg" alt="photo of blue hipster backpack">
+                <p>BAGS</p>
+                <h3>Blue Hipster Backpack</h3>
+                <p>$69.00</p>
+                <button type="button" id="blue-hipster-backpack"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/demin-overall-shorts.jpg" alt="photo of Demin Overall Shorts">
+                <p>DEMINS</p>
+                <h3>Demin Overall Shorts</h3>
+                <p>$89.00</p>
+                <button type="button" id="demin-overall-shorts"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/pink-dotted-dress.jpg" alt="photo of Pink Dotted Dress">
+                <p>DRESSES</p>
+                <h3>Pink Dotted Dress</h3>
+                <p>$99.00</p>
+                <button type="button" id="pink-dotted-dress"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/blue-silk-dress.jpg" alt="photo of Blue Silk Dress">
+                <p>DRESSES</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$119.00</p>
+                <button type="button" id="blue-silk-dress"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/cotton-blue-shirt.jpg" alt="photo of Cotton Blue Shirt">
+                <p>SHIRTS</p>
+                <h3>Cotton Blue Shirt</h3>
+                <p>$69.00</p>
+                <button type="button" id="cotton-blue-shirt"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="photo of Cotton Yellow TShirt">
+                <p>TSHIRTS</p>
+                <h3>Cotton Yellow TShirt</h3>
+                <p>$89.00</p>
+                <button type="button" id="otton-yellow-tshirt"><a href="#">Add to Cart</a></button>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/stretch-knit-dress.jpg" alt="photo of Stretch Knit Dress">
+                <p>DRESSES</p>
+                <h3>Stretch Knit Dress</h3>
+                <p>$119.00</p>
+                <button type="button" id="stretch-knit-dress"><a href="#">Add to Cart</a></button>
+            </div>
         </div>
     </section>
 
@@ -209,6 +219,7 @@
 
     <!-- script at the bottom to make sure the document is loaded -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
