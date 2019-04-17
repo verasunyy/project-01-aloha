@@ -34,7 +34,7 @@ emailSubscribe.addEventListener("submit", function(event){
 // add products to shopping cart
 const numberOfItems = document.getElementById("numberOfItems");
 // const product = document.getElementsByClassName("carousel-cell");
-const products = document.getElementById("products");
+const products = document.getElementById("featured");
 let index=0;
 products.addEventListener("click", function(event){
     event.preventDefault();
