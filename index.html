@@ -19,6 +19,7 @@
 
 <!-- three screen sizes: mobile(<600px) tablet(<1240) and desktop(>=1240) -->
 <!-- implement moblie first responsive layout -->
+
 <body>
     <!-- main header on top of the web page and fixed position -->
     <!-- includeing logo, nav and shoping cart -->
@@ -26,7 +27,7 @@
         <div class="header container">
             <!-- logo -->
             <div class="logo">
-                <img src="images/aloha-logo.svg" alt="Aloha logo">
+                <h1><a href="#top"><img src="images/aloha-logo.svg"  title="Aloha Apparel Co." alt="Aloha logo"></a></h1>
             </div>
             <!-- cart -->
             <div class="cart container">
@@ -38,10 +39,10 @@
             <!-- navigation -->
             <div class="nav">
                 <ul class="container">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#shop">shop</a></li>
-                    <li><a href="#featured">featured</a></li>
-                    <li><a href="#updates">updates</a></li>
+                    <li><a href="#about-position">about</a></li>
+                    <li><a href="#shop-position">shop</a></li>
+                    <li><a href="#featured-position">featured</a></li>
+                    <li><a href="#updates-position">updates</a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +50,7 @@
 
     <!-- divide header and rest of the content -->
     <!-- for header position fixed -->
-    <div class="divider">
+    <div class="divider" id="top">
         &nbsp;
     </div>
 
@@ -62,6 +63,10 @@
         </div>
     </section>
 
+    <!-- correcting the scrolling position problem -->
+    <div class="divider-scroll" id="about-position">
+        &nbsp;
+    </div>
 
     <!-- about: a header and a paragrph -->
     <section class="about container" id="about">
@@ -72,6 +77,10 @@
         </div>
     </section>
 
+    <!-- correcting the scrolling position problem -->
+    <div class="divider-scroll" id="shop-position">
+        &nbsp;
+    </div>
 
     <!-- shop: 6 catagories layout with flexbox -->
     <section class="shop container" id="shop">
@@ -95,6 +104,10 @@
         </div>
     </section>
 
+    <!-- correcting the scrolling position problem -->
+    <div class="divider-scroll" id="featured-position">
+        &nbsp;
+    </div>
 
     <!-- products list -->
     <section class="products" id="featured">
@@ -160,6 +173,10 @@
         </div>
     </section>
 
+    <!-- correcting the scrolling position problem -->
+    <div class="divider-scroll" id="updates-position">
+        &nbsp;
+    </div>
 
     <!-- updates and sign-up section: background and text -->
     <!-- form for email submit -->
