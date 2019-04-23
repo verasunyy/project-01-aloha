@@ -1,4 +1,4 @@
-# Aloha Project 1
+# Aloha Project 1 ![My Awsome badge](https://img.shields.io/badge/%F0%9F%90%99-Awsome-red.svg)
 Aloha project is the homepage of a Hand-crafted style apparel company.
 
 # Motivation
