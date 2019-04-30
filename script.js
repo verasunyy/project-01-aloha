@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailSubscribe.addEventListener("submit", function (event) {
         event.preventDefault();
-        if (emailInput.value != "") {
+        if (emailInput.value !== "") {
             alert("Thank You for Subscribe!");
             emailInput.value = "";
         }
