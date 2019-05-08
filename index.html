@@ -23,6 +23,8 @@
 <body>
     <!-- main header on top of the web page and fixed position -->
     <!-- includeing logo, nav and shoping cart -->
+    <a class="screen-reader-text" href="#about-position">Skip to content</a>
+
     <header>
         <div class="header container">
             <!-- logo -->
@@ -62,7 +64,7 @@
             <h2>spring/summer 2019</h2>
         </div>
     </section>
-
+    <main id="main" class="site-main" tabindex="-1">
     <!-- correcting the scrolling position problem -->
     <div class="divider-scroll" id="about-position">
         &nbsp;
@@ -194,7 +196,7 @@
         </div>
     </section>
 
-
+    </main>
     <!-- footer includes contact information and social media links -->
     <footer id="updates">
         <div class="footer container">
@@ -243,6 +245,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js"></script>
 </body>
 
 </html>

@@ -48,6 +48,35 @@ img{
     margin:0 auto;
     margin-top:-112px;
 }
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }
+ 
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 10;
+    background: white;
+    color: red;
+    align-self: center;
+    /* above all content */
+ }
+ 
+ #main[tabindex="-1"]:focus {
+    outline: 0;
+ }
+ 
+ :focus {
+    outline: thick dotted #b64036;
+ }
 
 
 /* header *************************/
