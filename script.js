@@ -63,23 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-    /*
-    //smooth scrooll using window.scrollTo();
-    //not working properly when click a link twice-its went back to the top
-    const navLinks = document.querySelectorAll(".nav a");
-    navLinks.forEach(function (element) {
-        let ids = element.getAttribute("href").substring(1);
-        let section = document.getElementById(ids);
-        let sectionPosition = section.getBoundingClientRect().top;
-        let offsetPosition = sectionPosition - 89;
-        //to reset the top position;
-        window.scroll(0, 0);
-        element.addEventListener("click", function (event) {
-            event.preventDefault();
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        });
-    });
-    */

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Aloha Project 1  ![My Awsome badge](https://img.shields.io/badge/%F0%9F%90%99-Awsome-red.svg)
-=======
-# Aloha Project 1 ![My Awsome badge](https://img.shields.io/badge/%F0%9F%90%99-Awsome-red.svg)
->>>>>>> 25295d43caa96aad15d407e1464c30bbff90cbbd
 Aloha project is the homepage of a Hand-crafted style apparel company.
 
 # Motivation
